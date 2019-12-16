@@ -1,5 +1,13 @@
 # C++ basic reference examples
 
+## Concepts
+
+* _copying policies_: see `copy_move/` directory. Default behaviour is to use shallow
+ copying for constructing and assignment. This can be changed by implementing copying
+ policies.
+* _memory allocation_: see `mem_management/` directory.
+* _access specifier_: see `access_spec/` directory.
+* _abstract classes_: see `virtual_methods/` directory.
 
 ## Debug
 
