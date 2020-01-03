@@ -25,8 +25,10 @@ public:
     {
         free(_myInt);
     };
-    void printOwnAddress() { std::cout << "Own address on the stack is " << this << std::endl; }
-    void printMemberAddress() { std::cout << "Managing memory block on the heap at " << _myInt << std::endl; }
+    void printOwnAddress() {
+      std::cout << "Own address on the stack is " << this << std::endl; }
+    void printMemberAddress() {
+      std::cout << "Managing memory block on the heap at " << _myInt << std::endl; }
 };
 
 int main()

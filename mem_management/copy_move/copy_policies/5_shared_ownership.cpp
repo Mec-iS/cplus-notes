@@ -6,7 +6,7 @@ perform a copy or assignment similar to the default behavior, i.e. copying
  the handle instead of the content (as with a shallow copy) while at the same
  time keeping track of the number of instances that also point to the same resource.
 
-that this is the central idea of `unique_ptr`,
+this is the central idea of `unique_ptr`,
 
 NOTE: implementation of `&operator=` is missing. This violates the Rules of Three
  (see `PRACTICES` file).

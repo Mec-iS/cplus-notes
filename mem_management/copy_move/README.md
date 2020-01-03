@@ -1,5 +1,8 @@
 **See as a reference [section R of C++ Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource)**
 
+### Basic copy policies
+See `copy_policies/`.
+
 ### Best-Practices for Passing Smart Pointers
 This sections contains a condensed summary of when (and when not) to use smart pointers and how to properly pass them between functions. This section is intended as a guide for your future use of this important feature in modern C++ and will hopefully encourage you not to ditch raw pointers altogether but instead to think about where your code could benefit from smart pointers - and when it would most probably not.
 
