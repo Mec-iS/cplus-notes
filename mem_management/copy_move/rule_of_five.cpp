@@ -67,6 +67,7 @@ ChatBot::ChatBot(ChatBot&& other) noexcept
   _chatLogic = other._chatLogic;
   _chatLogic->SetChatbotHandle(this);
 
+  // these could be achieved also by simple assignment
   _currentNode = std::move(other._currentNode);
   _chatLogic = std::move(other._chatLogic);
   _rootNode = std::move(other._rootNode);

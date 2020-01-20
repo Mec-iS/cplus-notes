@@ -8,6 +8,8 @@
 * _memory allocation_: see `mem_management/` directory.
 * _access specifier_: see `access_spec/` directory.
 * _abstract classes_: see `virtual_methods/` directory.
+* _lambdas_: see `functions/lambdas`,
+* _concurrency_: see `concurrency`
 
 ## Debug
 
