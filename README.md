@@ -8,10 +8,15 @@
 * _memory allocation_: see `mem_management/` directory.
 * _access specifier_: see `access_spec/` directory.
 * _abstract classes_: see `virtual_methods/` directory.
-* _lambdas_: see `functions/lambdas`,
+* _lambdas_: see `lambdas`,
 * _concurrency_: see `concurrency`
 
 ## Debug
+
+### Basics
+
+* "When printing information for debugging purposes, use std::cerr instead of std::cout" [link](https://www.learncpp.com/cpp-tutorial/basic-debugging-tactics/).
+* [strategy for debugging](https://www.learncpp.com/cpp-tutorial/a-strategy-for-debugging/)
 
 ### Valgrind examples
 
