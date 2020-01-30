@@ -24,3 +24,4 @@
 
 ## Links
 * [RAII - Resource Acquisition Is Initialization](https://en.cppreference.com/w/cpp/language/raii)
+* [Awesome C++](https://awesomecpp.com/)
