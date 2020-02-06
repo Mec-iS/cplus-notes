@@ -1,5 +1,38 @@
 **See as a reference [section R of C++ Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource)**
 
+### Briefly
+The compiler needs declaration of constructors to allow the copy behaviour to
+ take place correctly as expected from the program. When an object is passed to
+ another constructor/class different policies can be applied according to how the
+ different constructors are overriden ("Rule of 3" and "Rule of 5"):
+```
+class Game {
+  //
+  // Five basic constructors for the Rule of 5
+  // *****************************************
+public:
+  // in case of explicit declaration: `Game g = Game()`
+  Game() { window = new PlayWindow("PlayerOne Demo", WIDTH, HEIGHT);};
+
+  // in case an instance is passed to the constructor
+  // of an instance of the same class
+  Game(const Game&) = default;
+
+  // default assignment, return the lhs by reference
+  // see https://en.cppreference.com/w/cpp/language/operators#Assignment_operator
+  Game& operator=(const Game&) = default;
+
+  // move assignment, use of right value (&&)
+  // https://en.cppreference.com/w/cpp/language/move_assignment
+  Game(Game&& other) noexcept;
+
+  // decosntructor
+  ~Game(){ delete window; };
+
+  PlayWindow* window;
+};
+ ```
+
 ### Basic copy policies
 See `copy_policies/`.
 
