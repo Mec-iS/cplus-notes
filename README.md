@@ -10,6 +10,9 @@
 * _abstract classes_: see `virtual_methods/` directory.
 * _lambdas_: see `lambdas`,
 * _concurrency_: see `concurrency`
+* _smart pointers_: see `mem_management/copy_move/smart_ptrs`
+* ...
+
 
 ## Debug
 
@@ -25,3 +28,4 @@
 ## Links
 * [RAII - Resource Acquisition Is Initialization](https://en.cppreference.com/w/cpp/language/raii)
 * [Awesome C++](https://awesomecpp.com/)
+* [Great examples repository](https://github.com/PacktWorkshops/The-CPP-Workshop)
